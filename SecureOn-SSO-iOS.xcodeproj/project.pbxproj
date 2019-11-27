@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		98B00F51238E8EDC005F2401 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B00F50238E8EDC005F2401 /* AppDelegate.m */; };
+		98B00F54238E8EDC005F2401 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B00F53238E8EDC005F2401 /* SceneDelegate.m */; };
+		98B00F57238E8EDC005F2401 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B00F56238E8EDC005F2401 /* ViewController.m */; };
+		98B00F5A238E8EDC005F2401 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B00F58238E8EDC005F2401 /* Main.storyboard */; };
+		98B00F5C238E8EDD005F2401 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B00F5B238E8EDD005F2401 /* Assets.xcassets */; };
+		98B00F5F238E8EDD005F2401 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B00F5D238E8EDD005F2401 /* LaunchScreen.storyboard */; };
+		98B00F62238E8EDD005F2401 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B00F61238E8EDD005F2401 /* main.m */; };
+		98B00F6C238E8EDD005F2401 /* SecureOn_SSO_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B00F6B238E8EDD005F2401 /* SecureOn_SSO_iOSTests.m */; };
+		98B00F77238E8EDD005F2401 /* SecureOn_SSO_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B00F76238E8EDD005F2401 /* SecureOn_SSO_iOSUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		98B00F68238E8EDD005F2401 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98B00F44238E8EDC005F2401 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98B00F4B238E8EDC005F2401;
+			remoteInfo = "SecureOn-SSO-iOS";
+		};
+		98B00F73238E8EDD005F2401 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 98B00F44238E8EDC005F2401 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 98B00F4B238E8EDC005F2401;
+			remoteInfo = "SecureOn-SSO-iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		98B00F4C238E8EDC005F2401 /* SecureOn-SSO-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SecureOn-SSO-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98B00F4F238E8EDC005F2401 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		98B00F50238E8EDC005F2401 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		98B00F52238E8EDC005F2401 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		98B00F53238E8EDC005F2401 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		98B00F55238E8EDC005F2401 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		98B00F56238E8EDC005F2401 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		98B00F59238E8EDC005F2401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		98B00F5B238E8EDD005F2401 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		98B00F5E238E8EDD005F2401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		98B00F60238E8EDD005F2401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98B00F61238E8EDD005F2401 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		98B00F67238E8EDD005F2401 /* SecureOn-SSO-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SecureOn-SSO-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98B00F6B238E8EDD005F2401 /* SecureOn_SSO_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecureOn_SSO_iOSTests.m; sourceTree = "<group>"; };
+		98B00F6D238E8EDD005F2401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98B00F72238E8EDD005F2401 /* SecureOn-SSO-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SecureOn-SSO-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98B00F76238E8EDD005F2401 /* SecureOn_SSO_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecureOn_SSO_iOSUITests.m; sourceTree = "<group>"; };
+		98B00F78238E8EDD005F2401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		98B00F49238E8EDC005F2401 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B00F64238E8EDD005F2401 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B00F6F238E8EDD005F2401 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		98B00F43238E8EDC005F2401 = {
+			isa = PBXGroup;
+			children = (
+				98B00F4E238E8EDC005F2401 /* SecureOn-SSO-iOS */,
+				98B00F6A238E8EDD005F2401 /* SecureOn-SSO-iOSTests */,
+				98B00F75238E8EDD005F2401 /* SecureOn-SSO-iOSUITests */,
+				98B00F4D238E8EDC005F2401 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		98B00F4D238E8EDC005F2401 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				98B00F4C238E8EDC005F2401 /* SecureOn-SSO-iOS.app */,
+				98B00F67238E8EDD005F2401 /* SecureOn-SSO-iOSTests.xctest */,
+				98B00F72238E8EDD005F2401 /* SecureOn-SSO-iOSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		98B00F4E238E8EDC005F2401 /* SecureOn-SSO-iOS */ = {
+			isa = PBXGroup;
+			children = (
+				98B00F4F238E8EDC005F2401 /* AppDelegate.h */,
+				98B00F50238E8EDC005F2401 /* AppDelegate.m */,
+				98B00F52238E8EDC005F2401 /* SceneDelegate.h */,
+				98B00F53238E8EDC005F2401 /* SceneDelegate.m */,
+				98B00F55238E8EDC005F2401 /* ViewController.h */,
+				98B00F56238E8EDC005F2401 /* ViewController.m */,
+				98B00F58238E8EDC005F2401 /* Main.storyboard */,
+				98B00F5B238E8EDD005F2401 /* Assets.xcassets */,
+				98B00F5D238E8EDD005F2401 /* LaunchScreen.storyboard */,
+				98B00F60238E8EDD005F2401 /* Info.plist */,
+				98B00F61238E8EDD005F2401 /* main.m */,
+			);
+			path = "SecureOn-SSO-iOS";
+			sourceTree = "<group>";
+		};
+		98B00F6A238E8EDD005F2401 /* SecureOn-SSO-iOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				98B00F6B238E8EDD005F2401 /* SecureOn_SSO_iOSTests.m */,
+				98B00F6D238E8EDD005F2401 /* Info.plist */,
+			);
+			path = "SecureOn-SSO-iOSTests";
+			sourceTree = "<group>";
+		};
+		98B00F75238E8EDD005F2401 /* SecureOn-SSO-iOSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				98B00F76238E8EDD005F2401 /* SecureOn_SSO_iOSUITests.m */,
+				98B00F78238E8EDD005F2401 /* Info.plist */,
+			);
+			path = "SecureOn-SSO-iOSUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		98B00F4B238E8EDC005F2401 /* SecureOn-SSO-iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98B00F7B238E8EDD005F2401 /* Build configuration list for PBXNativeTarget "SecureOn-SSO-iOS" */;
+			buildPhases = (
+				98B00F48238E8EDC005F2401 /* Sources */,
+				98B00F49238E8EDC005F2401 /* Frameworks */,
+				98B00F4A238E8EDC005F2401 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SecureOn-SSO-iOS";
+			productName = "SecureOn-SSO-iOS";
+			productReference = 98B00F4C238E8EDC005F2401 /* SecureOn-SSO-iOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		98B00F66238E8EDD005F2401 /* SecureOn-SSO-iOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98B00F7E238E8EDD005F2401 /* Build configuration list for PBXNativeTarget "SecureOn-SSO-iOSTests" */;
+			buildPhases = (
+				98B00F63238E8EDD005F2401 /* Sources */,
+				98B00F64238E8EDD005F2401 /* Frameworks */,
+				98B00F65238E8EDD005F2401 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98B00F69238E8EDD005F2401 /* PBXTargetDependency */,
+			);
+			name = "SecureOn-SSO-iOSTests";
+			productName = "SecureOn-SSO-iOSTests";
+			productReference = 98B00F67238E8EDD005F2401 /* SecureOn-SSO-iOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		98B00F71238E8EDD005F2401 /* SecureOn-SSO-iOSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 98B00F81238E8EDD005F2401 /* Build configuration list for PBXNativeTarget "SecureOn-SSO-iOSUITests" */;
+			buildPhases = (
+				98B00F6E238E8EDD005F2401 /* Sources */,
+				98B00F6F238E8EDD005F2401 /* Frameworks */,
+				98B00F70238E8EDD005F2401 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				98B00F74238E8EDD005F2401 /* PBXTargetDependency */,
+			);
+			name = "SecureOn-SSO-iOSUITests";
+			productName = "SecureOn-SSO-iOSUITests";
+			productReference = 98B00F72238E8EDD005F2401 /* SecureOn-SSO-iOSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		98B00F44238E8EDC005F2401 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "성찬우";
+				TargetAttributes = {
+					98B00F4B238E8EDC005F2401 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+					98B00F66238E8EDD005F2401 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 98B00F4B238E8EDC005F2401;
+					};
+					98B00F71238E8EDD005F2401 = {
+						CreatedOnToolsVersion = 11.2.1;
+						TestTargetID = 98B00F4B238E8EDC005F2401;
+					};
+				};
+			};
+			buildConfigurationList = 98B00F47238E8EDC005F2401 /* Build configuration list for PBXProject "SecureOn-SSO-iOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 98B00F43238E8EDC005F2401;
+			productRefGroup = 98B00F4D238E8EDC005F2401 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				98B00F4B238E8EDC005F2401 /* SecureOn-SSO-iOS */,
+				98B00F66238E8EDD005F2401 /* SecureOn-SSO-iOSTests */,
+				98B00F71238E8EDD005F2401 /* SecureOn-SSO-iOSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		98B00F4A238E8EDC005F2401 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B00F5F238E8EDD005F2401 /* LaunchScreen.storyboard in Resources */,
+				98B00F5C238E8EDD005F2401 /* Assets.xcassets in Resources */,
+				98B00F5A238E8EDC005F2401 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B00F65238E8EDD005F2401 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B00F70238E8EDD005F2401 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		98B00F48238E8EDC005F2401 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B00F57238E8EDC005F2401 /* ViewController.m in Sources */,
+				98B00F51238E8EDC005F2401 /* AppDelegate.m in Sources */,
+				98B00F62238E8EDD005F2401 /* main.m in Sources */,
+				98B00F54238E8EDC005F2401 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B00F63238E8EDD005F2401 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B00F6C238E8EDD005F2401 /* SecureOn_SSO_iOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		98B00F6E238E8EDD005F2401 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B00F77238E8EDD005F2401 /* SecureOn_SSO_iOSUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		98B00F69238E8EDD005F2401 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98B00F4B238E8EDC005F2401 /* SecureOn-SSO-iOS */;
+			targetProxy = 98B00F68238E8EDD005F2401 /* PBXContainerItemProxy */;
+		};
+		98B00F74238E8EDD005F2401 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 98B00F4B238E8EDC005F2401 /* SecureOn-SSO-iOS */;
+			targetProxy = 98B00F73238E8EDD005F2401 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		98B00F58238E8EDC005F2401 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98B00F59238E8EDC005F2401 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		98B00F5D238E8EDD005F2401 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				98B00F5E238E8EDD005F2401 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		98B00F79238E8EDD005F2401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		98B00F7A238E8EDD005F2401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		98B00F7C238E8EDD005F2401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z49D557LQF;
+				INFOPLIST_FILE = "SecureOn-SSO-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.secureon.sso.sample.SecureOn-SSO-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		98B00F7D238E8EDD005F2401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z49D557LQF;
+				INFOPLIST_FILE = "SecureOn-SSO-iOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.secureon.sso.sample.SecureOn-SSO-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		98B00F7F238E8EDD005F2401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z49D557LQF;
+				INFOPLIST_FILE = "SecureOn-SSO-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.secureon.sso.sample.SecureOn-SSO-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecureOn-SSO-iOS.app/SecureOn-SSO-iOS";
+			};
+			name = Debug;
+		};
+		98B00F80238E8EDD005F2401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z49D557LQF;
+				INFOPLIST_FILE = "SecureOn-SSO-iOSTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.secureon.sso.sample.SecureOn-SSO-iOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecureOn-SSO-iOS.app/SecureOn-SSO-iOS";
+			};
+			name = Release;
+		};
+		98B00F82238E8EDD005F2401 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z49D557LQF;
+				INFOPLIST_FILE = "SecureOn-SSO-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.secureon.sso.sample.SecureOn-SSO-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SecureOn-SSO-iOS";
+			};
+			name = Debug;
+		};
+		98B00F83238E8EDD005F2401 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z49D557LQF;
+				INFOPLIST_FILE = "SecureOn-SSO-iOSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.secureon.sso.sample.SecureOn-SSO-iOSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "SecureOn-SSO-iOS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		98B00F47238E8EDC005F2401 /* Build configuration list for PBXProject "SecureOn-SSO-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98B00F79238E8EDD005F2401 /* Debug */,
+				98B00F7A238E8EDD005F2401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98B00F7B238E8EDD005F2401 /* Build configuration list for PBXNativeTarget "SecureOn-SSO-iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98B00F7C238E8EDD005F2401 /* Debug */,
+				98B00F7D238E8EDD005F2401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98B00F7E238E8EDD005F2401 /* Build configuration list for PBXNativeTarget "SecureOn-SSO-iOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98B00F7F238E8EDD005F2401 /* Debug */,
+				98B00F80238E8EDD005F2401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		98B00F81238E8EDD005F2401 /* Build configuration list for PBXNativeTarget "SecureOn-SSO-iOSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98B00F82238E8EDD005F2401 /* Debug */,
+				98B00F83238E8EDD005F2401 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 98B00F44238E8EDC005F2401 /* Project object */;
+}
