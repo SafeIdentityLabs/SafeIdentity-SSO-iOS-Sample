@@ -16,6 +16,7 @@
 		98B00F62238E8EDD005F2401 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B00F61238E8EDD005F2401 /* main.m */; };
 		98B00F6C238E8EDD005F2401 /* SecureOn_SSO_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B00F6B238E8EDD005F2401 /* SecureOn_SSO_iOSTests.m */; };
 		98B00F77238E8EDD005F2401 /* SecureOn_SSO_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B00F76238E8EDD005F2401 /* SecureOn_SSO_iOSUITests.m */; };
+		98B00F86238FDD25005F2401 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B00F85238FDD25005F2401 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		98B00F4C238E8EDC005F2401 /* SecureOn-SSO-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SecureOn-SSO-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		98B00F4C238E8EDC005F2401 /* SafeIdentity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeIdentity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B00F4F238E8EDC005F2401 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		98B00F50238E8EDC005F2401 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		98B00F52238E8EDC005F2401 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
@@ -54,6 +55,8 @@
 		98B00F72238E8EDD005F2401 /* SecureOn-SSO-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SecureOn-SSO-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B00F76238E8EDD005F2401 /* SecureOn_SSO_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecureOn_SSO_iOSUITests.m; sourceTree = "<group>"; };
 		98B00F78238E8EDD005F2401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		98B00F84238FDD25005F2401 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		98B00F85238FDD25005F2401 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +97,7 @@
 		98B00F4D238E8EDC005F2401 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				98B00F4C238E8EDC005F2401 /* SecureOn-SSO-iOS.app */,
+				98B00F4C238E8EDC005F2401 /* SafeIdentity.app */,
 				98B00F67238E8EDD005F2401 /* SecureOn-SSO-iOSTests.xctest */,
 				98B00F72238E8EDD005F2401 /* SecureOn-SSO-iOSUITests.xctest */,
 			);
@@ -111,6 +114,8 @@
 				98B00F55238E8EDC005F2401 /* ViewController.h */,
 				98B00F56238E8EDC005F2401 /* ViewController.m */,
 				98B00F58238E8EDC005F2401 /* Main.storyboard */,
+				98B00F84238FDD25005F2401 /* LoginViewController.h */,
+				98B00F85238FDD25005F2401 /* LoginViewController.m */,
 				98B00F5B238E8EDD005F2401 /* Assets.xcassets */,
 				98B00F5D238E8EDD005F2401 /* LaunchScreen.storyboard */,
 				98B00F60238E8EDD005F2401 /* Info.plist */,
@@ -154,7 +159,7 @@
 			);
 			name = "SecureOn-SSO-iOS";
 			productName = "SecureOn-SSO-iOS";
-			productReference = 98B00F4C238E8EDC005F2401 /* SecureOn-SSO-iOS.app */;
+			productReference = 98B00F4C238E8EDC005F2401 /* SafeIdentity.app */;
 			productType = "com.apple.product-type.application";
 		};
 		98B00F66238E8EDD005F2401 /* SecureOn-SSO-iOSTests */ = {
@@ -271,6 +276,7 @@
 				98B00F51238E8EDC005F2401 /* AppDelegate.m in Sources */,
 				98B00F62238E8EDD005F2401 /* main.m in Sources */,
 				98B00F54238E8EDC005F2401 /* SceneDelegate.m in Sources */,
+				98B00F86238FDD25005F2401 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,7 +381,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -427,7 +433,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -446,8 +452,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.secureon.sso.sample.SecureOn-SSO-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.secureon.sso.sample;
+				PRODUCT_NAME = SafeIdentity;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -463,8 +469,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.secureon.sso.sample.SecureOn-SSO-iOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = kr.co.secureon.sso.sample;
+				PRODUCT_NAME = SafeIdentity;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
