@@ -7,6 +7,9 @@
 //
 
 #import "AppDelegate.h"
+#import "iposso.h"
+#import "CommonUtil.h"
+#import "LoginViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +20,42 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    return YES;
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+
+    if( !url ) {
+        return NO;
+    }
+        
+    NSLog(@"AppDelegate - url.absoluteString: %@", url.absoluteString);
+    NSLog(@"AppDelegate - url query : %@", [url query]);
+    
+    //ssoToken이 있으면 값 세팅
+    NSString *ssoToken = [url query];
+    
+    if (ssoToken != nil && ssoToken != NULL) {
+        NSLog(@"AppDelegate - ssotoken is not null.");
+        
+        NSString *ssoTokenKey = ipo_sso_init([CommonUtil expPageUrl]);
+        ssoToken = [ssoToken substringFromIndex:9];
+        NSLog(@"AppDelegate - ssoToken : %@", ssoToken);
+        
+        ipo_set_ssotoken(ssoToken, ssoTokenKey);
+        ipo_sso_verify_token(ssoToken, [CommonUtil clientIp], getSecId());
+    } else {
+        NSLog(@"AppDelegate - ssoToken is null and web income");
+        NSString *samplePageUrl = [NSString stringWithFormat:@"http://192.168.1.236:8080/demo/ios/msso_auth_id_sample.jsp?secId=%@", getSecId()];
+        NSURL *sampleUrl = [[NSURL alloc] initWithString:samplePageUrl];
+        [[UIApplication sharedApplication] openURL:sampleUrl];
+        return NO;
+    }
+
+    NSString *UrlString = [url absoluteString];
+    
+    [[NSUserDefaults standardUserDefaults] setObject:UrlString forKey:@"url"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
     return YES;
 }
 

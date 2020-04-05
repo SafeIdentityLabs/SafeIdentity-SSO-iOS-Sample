@@ -10,9 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController {
+    int rHttpLastError; //http 오류 저장 변수
+    int rSSOLastError;  //sso
+    int initResult;
+}
 
-@property (weak, nonatomic) IBOutlet UITextField *idTextField;
+@property (weak, nonatomic) IBOutlet UITextView *secIdTextView;
+@property (weak, nonatomic) IBOutlet UITextField *useridTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *typeSegmentedControl;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;

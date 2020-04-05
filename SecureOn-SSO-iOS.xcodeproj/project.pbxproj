@@ -7,15 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		987BECAB2435D65500E2FB0F /* libiposso.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 987BECAA2435D64600E2FB0F /* libiposso.a */; };
+		987BECAE2435DA8C00E2FB0F /* CommonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 987BECAC2435DA8C00E2FB0F /* CommonUtil.m */; };
+		987BECB82435E44D00E2FB0F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987BECB72435E44D00E2FB0F /* UIKit.framework */; };
+		987BECBA2435E46600E2FB0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987BECB92435E46600E2FB0F /* Foundation.framework */; };
+		987BECBC2435E47A00E2FB0F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987BECBB2435E47A00E2FB0F /* CoreGraphics.framework */; };
+		987BECBE2435F87900E2FB0F /* sso_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 987BECBD2435F87800E2FB0F /* sso_config.plist */; };
+		987E037F243A4E5100FE2963 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987E037E243A4E5100FE2963 /* InfoViewController.m */; };
+		987E0382243A4E6D00FE2963 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987E0381243A4E6D00FE2963 /* WebViewController.m */; };
+		987E0385243A4E7C00FE2963 /* ApiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987E0384243A4E7C00FE2963 /* ApiViewController.m */; };
+		987E0388243A6AF500FE2963 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987E0387243A6AF500FE2963 /* TableViewController.m */; };
+		987E038B243A6BC900FE2963 /* ApiTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987E038A243A6BC900FE2963 /* ApiTestViewController.m */; };
 		98B00F51238E8EDC005F2401 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B00F50238E8EDC005F2401 /* AppDelegate.m */; };
 		98B00F54238E8EDC005F2401 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B00F53238E8EDC005F2401 /* SceneDelegate.m */; };
-		98B00F57238E8EDC005F2401 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B00F56238E8EDC005F2401 /* ViewController.m */; };
 		98B00F5A238E8EDC005F2401 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B00F58238E8EDC005F2401 /* Main.storyboard */; };
 		98B00F5C238E8EDD005F2401 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 98B00F5B238E8EDD005F2401 /* Assets.xcassets */; };
 		98B00F5F238E8EDD005F2401 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 98B00F5D238E8EDD005F2401 /* LaunchScreen.storyboard */; };
 		98B00F62238E8EDD005F2401 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B00F61238E8EDD005F2401 /* main.m */; };
 		98B00F6C238E8EDD005F2401 /* SecureOn_SSO_iOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B00F6B238E8EDD005F2401 /* SecureOn_SSO_iOSTests.m */; };
-		98B00F77238E8EDD005F2401 /* SecureOn_SSO_iOSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B00F76238E8EDD005F2401 /* SecureOn_SSO_iOSUITests.m */; };
 		98B00F86238FDD25005F2401 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B00F85238FDD25005F2401 /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -27,23 +36,39 @@
 			remoteGlobalIDString = 98B00F4B238E8EDC005F2401;
 			remoteInfo = "SecureOn-SSO-iOS";
 		};
-		98B00F73238E8EDD005F2401 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 98B00F44238E8EDC005F2401 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 98B00F4B238E8EDC005F2401;
-			remoteInfo = "SecureOn-SSO-iOS";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		987BECAA2435D64600E2FB0F /* libiposso.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libiposso.a; path = Library/libiposso.a; sourceTree = "<group>"; };
+		987BECAC2435DA8C00E2FB0F /* CommonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonUtil.m; sourceTree = "<group>"; };
+		987BECAD2435DA8C00E2FB0F /* CommonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonUtil.h; sourceTree = "<group>"; };
+		987BECAF2435DCD800E2FB0F /* SsoConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SsoConst.h; sourceTree = "<group>"; };
+		987BECB02435DCD800E2FB0F /* Base64.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Base64.h; sourceTree = "<group>"; };
+		987BECB12435DCD800E2FB0F /* NVDS_Wrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NVDS_Wrapper.h; sourceTree = "<group>"; };
+		987BECB22435DCD800E2FB0F /* NVDS2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NVDS2.h; sourceTree = "<group>"; };
+		987BECB32435DCD800E2FB0F /* SsoUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SsoUtil.h; sourceTree = "<group>"; };
+		987BECB42435DCD800E2FB0F /* StringEncryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringEncryption.h; sourceTree = "<group>"; };
+		987BECB52435DCD800E2FB0F /* StringList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringList.h; sourceTree = "<group>"; };
+		987BECB62435DCD800E2FB0F /* iposso.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iposso.h; sourceTree = "<group>"; };
+		987BECB72435E44D00E2FB0F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		987BECB92435E46600E2FB0F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		987BECBB2435E47A00E2FB0F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		987BECBD2435F87800E2FB0F /* sso_config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = sso_config.plist; sourceTree = "<group>"; };
+		987E037D243A4E5100FE2963 /* InfoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		987E037E243A4E5100FE2963 /* InfoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		987E0380243A4E6D00FE2963 /* WebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
+		987E0381243A4E6D00FE2963 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
+		987E0383243A4E7C00FE2963 /* ApiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiViewController.h; sourceTree = "<group>"; };
+		987E0384243A4E7C00FE2963 /* ApiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiViewController.m; sourceTree = "<group>"; };
+		987E0386243A6AF500FE2963 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		987E0387243A6AF500FE2963 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		987E0389243A6BC900FE2963 /* ApiTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiTestViewController.h; sourceTree = "<group>"; };
+		987E038A243A6BC900FE2963 /* ApiTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiTestViewController.m; sourceTree = "<group>"; };
 		98B00F4C238E8EDC005F2401 /* SafeIdentity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeIdentity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B00F4F238E8EDC005F2401 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		98B00F50238E8EDC005F2401 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		98B00F52238E8EDC005F2401 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		98B00F53238E8EDC005F2401 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		98B00F55238E8EDC005F2401 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		98B00F56238E8EDC005F2401 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		98B00F59238E8EDC005F2401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		98B00F5B238E8EDD005F2401 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		98B00F5E238E8EDD005F2401 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -52,7 +77,6 @@
 		98B00F67238E8EDD005F2401 /* SecureOn-SSO-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SecureOn-SSO-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B00F6B238E8EDD005F2401 /* SecureOn_SSO_iOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecureOn_SSO_iOSTests.m; sourceTree = "<group>"; };
 		98B00F6D238E8EDD005F2401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		98B00F72238E8EDD005F2401 /* SecureOn-SSO-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SecureOn-SSO-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		98B00F76238E8EDD005F2401 /* SecureOn_SSO_iOSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecureOn_SSO_iOSUITests.m; sourceTree = "<group>"; };
 		98B00F78238E8EDD005F2401 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		98B00F84238FDD25005F2401 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
@@ -64,6 +88,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				987BECBC2435E47A00E2FB0F /* CoreGraphics.framework in Frameworks */,
+				987BECAB2435D65500E2FB0F /* libiposso.a in Frameworks */,
+				987BECBA2435E46600E2FB0F /* Foundation.framework in Frameworks */,
+				987BECB82435E44D00E2FB0F /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,23 +102,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98B00F6F238E8EDD005F2401 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		987BEC9E2435D60900E2FB0F /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				987BECB02435DCD800E2FB0F /* Base64.h */,
+				987BECB62435DCD800E2FB0F /* iposso.h */,
+				987BECB12435DCD800E2FB0F /* NVDS_Wrapper.h */,
+				987BECB22435DCD800E2FB0F /* NVDS2.h */,
+				987BECAF2435DCD800E2FB0F /* SsoConst.h */,
+				987BECB32435DCD800E2FB0F /* SsoUtil.h */,
+				987BECB42435DCD800E2FB0F /* StringEncryption.h */,
+				987BECB52435DCD800E2FB0F /* StringList.h */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		987BECA92435D64600E2FB0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				987BECBB2435E47A00E2FB0F /* CoreGraphics.framework */,
+				987BECB92435E46600E2FB0F /* Foundation.framework */,
+				987BECB72435E44D00E2FB0F /* UIKit.framework */,
+				987BECAA2435D64600E2FB0F /* libiposso.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		98B00F43238E8EDC005F2401 = {
 			isa = PBXGroup;
 			children = (
+				987BEC9E2435D60900E2FB0F /* Library */,
 				98B00F4E238E8EDC005F2401 /* SecureOn-SSO-iOS */,
 				98B00F6A238E8EDD005F2401 /* SecureOn-SSO-iOSTests */,
 				98B00F75238E8EDD005F2401 /* SecureOn-SSO-iOSUITests */,
 				98B00F4D238E8EDC005F2401 /* Products */,
+				987BECA92435D64600E2FB0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,7 +148,6 @@
 			children = (
 				98B00F4C238E8EDC005F2401 /* SafeIdentity.app */,
 				98B00F67238E8EDD005F2401 /* SecureOn-SSO-iOSTests.xctest */,
-				98B00F72238E8EDD005F2401 /* SecureOn-SSO-iOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,17 +157,28 @@
 			children = (
 				98B00F4F238E8EDC005F2401 /* AppDelegate.h */,
 				98B00F50238E8EDC005F2401 /* AppDelegate.m */,
+				987BECAD2435DA8C00E2FB0F /* CommonUtil.h */,
+				987BECAC2435DA8C00E2FB0F /* CommonUtil.m */,
 				98B00F52238E8EDC005F2401 /* SceneDelegate.h */,
 				98B00F53238E8EDC005F2401 /* SceneDelegate.m */,
-				98B00F55238E8EDC005F2401 /* ViewController.h */,
-				98B00F56238E8EDC005F2401 /* ViewController.m */,
 				98B00F58238E8EDC005F2401 /* Main.storyboard */,
 				98B00F84238FDD25005F2401 /* LoginViewController.h */,
 				98B00F85238FDD25005F2401 /* LoginViewController.m */,
+				987E037D243A4E5100FE2963 /* InfoViewController.h */,
+				987E037E243A4E5100FE2963 /* InfoViewController.m */,
+				987E0383243A4E7C00FE2963 /* ApiViewController.h */,
+				987E0384243A4E7C00FE2963 /* ApiViewController.m */,
+				987E0389243A6BC900FE2963 /* ApiTestViewController.h */,
+				987E038A243A6BC900FE2963 /* ApiTestViewController.m */,
+				987E0380243A4E6D00FE2963 /* WebViewController.h */,
+				987E0381243A4E6D00FE2963 /* WebViewController.m */,
 				98B00F5B238E8EDD005F2401 /* Assets.xcassets */,
 				98B00F5D238E8EDD005F2401 /* LaunchScreen.storyboard */,
 				98B00F60238E8EDD005F2401 /* Info.plist */,
+				987BECBD2435F87800E2FB0F /* sso_config.plist */,
 				98B00F61238E8EDD005F2401 /* main.m */,
+				987E0386243A6AF500FE2963 /* TableViewController.h */,
+				987E0387243A6AF500FE2963 /* TableViewController.m */,
 			);
 			path = "SecureOn-SSO-iOS";
 			sourceTree = "<group>";
@@ -180,24 +239,6 @@
 			productReference = 98B00F67238E8EDD005F2401 /* SecureOn-SSO-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		98B00F71238E8EDD005F2401 /* SecureOn-SSO-iOSUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 98B00F81238E8EDD005F2401 /* Build configuration list for PBXNativeTarget "SecureOn-SSO-iOSUITests" */;
-			buildPhases = (
-				98B00F6E238E8EDD005F2401 /* Sources */,
-				98B00F6F238E8EDD005F2401 /* Frameworks */,
-				98B00F70238E8EDD005F2401 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				98B00F74238E8EDD005F2401 /* PBXTargetDependency */,
-			);
-			name = "SecureOn-SSO-iOSUITests";
-			productName = "SecureOn-SSO-iOSUITests";
-			productReference = 98B00F72238E8EDD005F2401 /* SecureOn-SSO-iOSUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,10 +252,6 @@
 						CreatedOnToolsVersion = 11.2.1;
 					};
 					98B00F66238E8EDD005F2401 = {
-						CreatedOnToolsVersion = 11.2.1;
-						TestTargetID = 98B00F4B238E8EDC005F2401;
-					};
-					98B00F71238E8EDD005F2401 = {
 						CreatedOnToolsVersion = 11.2.1;
 						TestTargetID = 98B00F4B238E8EDC005F2401;
 					};
@@ -235,7 +272,6 @@
 			targets = (
 				98B00F4B238E8EDC005F2401 /* SecureOn-SSO-iOS */,
 				98B00F66238E8EDD005F2401 /* SecureOn-SSO-iOSTests */,
-				98B00F71238E8EDD005F2401 /* SecureOn-SSO-iOSUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -245,6 +281,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				987BECBE2435F87900E2FB0F /* sso_config.plist in Resources */,
 				98B00F5F238E8EDD005F2401 /* LaunchScreen.storyboard in Resources */,
 				98B00F5C238E8EDD005F2401 /* Assets.xcassets in Resources */,
 				98B00F5A238E8EDC005F2401 /* Main.storyboard in Resources */,
@@ -258,13 +295,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98B00F70238E8EDD005F2401 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -272,10 +302,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				98B00F57238E8EDC005F2401 /* ViewController.m in Sources */,
 				98B00F51238E8EDC005F2401 /* AppDelegate.m in Sources */,
+				987E037F243A4E5100FE2963 /* InfoViewController.m in Sources */,
 				98B00F62238E8EDD005F2401 /* main.m in Sources */,
+				987E038B243A6BC900FE2963 /* ApiTestViewController.m in Sources */,
+				987E0382243A4E6D00FE2963 /* WebViewController.m in Sources */,
+				987E0388243A6AF500FE2963 /* TableViewController.m in Sources */,
 				98B00F54238E8EDC005F2401 /* SceneDelegate.m in Sources */,
+				987E0385243A4E7C00FE2963 /* ApiViewController.m in Sources */,
+				987BECAE2435DA8C00E2FB0F /* CommonUtil.m in Sources */,
 				98B00F86238FDD25005F2401 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -288,14 +323,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		98B00F6E238E8EDD005F2401 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				98B00F77238E8EDD005F2401 /* SecureOn_SSO_iOSUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -303,11 +330,6 @@
 			isa = PBXTargetDependency;
 			target = 98B00F4B238E8EDC005F2401 /* SecureOn-SSO-iOS */;
 			targetProxy = 98B00F68238E8EDD005F2401 /* PBXContainerItemProxy */;
-		};
-		98B00F74238E8EDD005F2401 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 98B00F4B238E8EDC005F2401 /* SecureOn-SSO-iOS */;
-			targetProxy = 98B00F73238E8EDD005F2401 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -381,7 +403,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -433,7 +455,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -446,11 +468,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z49D557LQF;
+				DEVELOPMENT_TEAM = 6885EX7K43;
 				INFOPLIST_FILE = "SecureOn-SSO-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libarary",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.secureon.sso.sample;
 				PRODUCT_NAME = SafeIdentity;
@@ -463,11 +490,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z49D557LQF;
+				DEVELOPMENT_TEAM = 6885EX7K43;
 				INFOPLIST_FILE = "SecureOn-SSO-iOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Libarary",
+					"$(PROJECT_DIR)$(LOCAL_LIBRARY_DIR)",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.secureon.sso.sample;
 				PRODUCT_NAME = SafeIdentity;
@@ -480,7 +512,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z49D557LQF;
+				DEVELOPMENT_TEAM = 6885EX7K43;
 				INFOPLIST_FILE = "SecureOn-SSO-iOSTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -500,7 +532,7 @@
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z49D557LQF;
+				DEVELOPMENT_TEAM = 6885EX7K43;
 				INFOPLIST_FILE = "SecureOn-SSO-iOSTests/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -512,42 +544,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecureOn-SSO-iOS.app/SecureOn-SSO-iOS";
-			};
-			name = Release;
-		};
-		98B00F82238E8EDD005F2401 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z49D557LQF;
-				INFOPLIST_FILE = "SecureOn-SSO-iOSUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.secureon.sso.sample.SecureOn-SSO-iOSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "SecureOn-SSO-iOS";
-			};
-			name = Debug;
-		};
-		98B00F83238E8EDD005F2401 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Z49D557LQF;
-				INFOPLIST_FILE = "SecureOn-SSO-iOSUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "kr.co.secureon.sso.sample.SecureOn-SSO-iOSUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "SecureOn-SSO-iOS";
 			};
 			name = Release;
 		};
@@ -577,15 +573,6 @@
 			buildConfigurations = (
 				98B00F7F238E8EDD005F2401 /* Debug */,
 				98B00F80238E8EDD005F2401 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		98B00F81238E8EDD005F2401 /* Build configuration list for PBXNativeTarget "SecureOn-SSO-iOSUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				98B00F82238E8EDD005F2401 /* Debug */,
-				98B00F83238E8EDD005F2401 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
