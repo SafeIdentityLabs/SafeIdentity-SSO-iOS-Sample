@@ -175,8 +175,7 @@
         <!--WebView-->
         <scene sceneID="cPU-ye-2kO">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9cg-a0-08d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-                <viewController id="bav-Xj-BKU" sceneMemberID="viewController">
+                <viewController id="bav-Xj-BKU" customClass="WebViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Kxb-2W-OpN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -184,22 +183,42 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y1u-pj-3MU">
                                 <rect key="frame" x="0.0" y="710" width="414" height="49"/>
                                 <items>
-                                    <barButtonItem tag="10" title="&lt;" id="APi-KL-rAo"/>
+                                    <barButtonItem tag="10" title="&lt;" id="APi-KL-rAo">
+                                        <connections>
+                                            <action selector="goBack" destination="1Zn-dt-69l" id="C2Y-M3-WaX"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="PpB-wi-8Bi"/>
-                                    <barButtonItem tag="20" title="&gt;" id="SX2-HA-ElP"/>
+                                    <barButtonItem tag="20" title="&gt;" id="SX2-HA-ElP">
+                                        <connections>
+                                            <action selector="goForward" destination="1Zn-dt-69l" id="kon-fO-k08"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="fWy-xd-yfn"/>
-                                    <barButtonItem tag="30" title="HOME" id="df4-pJ-Pkf"/>
+                                    <barButtonItem tag="30" title="HOME" id="df4-pJ-Pkf">
+                                        <connections>
+                                            <action selector="barButtonClick:" destination="bav-Xj-BKU" id="kPV-kI-WT8"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="NvR-eo-Oid"/>
-                                    <barButtonItem tag="40" systemItem="refresh" id="gx2-NE-ajH"/>
+                                    <barButtonItem tag="40" systemItem="refresh" id="gx2-NE-ajH">
+                                        <connections>
+                                            <action selector="reload" destination="1Zn-dt-69l" id="6mu-vN-JTg"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="QEx-lC-Ip6"/>
-                                    <barButtonItem tag="50" systemItem="stop" id="y67-Ee-ayT"/>
+                                    <barButtonItem tag="50" systemItem="stop" id="y67-Ee-ayT">
+                                        <connections>
+                                            <action selector="stopLoading" destination="1Zn-dt-69l" id="nzC-Af-p0J"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wBo-QX-CHn">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                                 <items>
                                     <barButtonItem style="plain" id="xlo-2w-Q9b">
-                                        <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://192.168.1.236:8080/demo/ios/msso_web_sample.jsp" borderStyle="roundedRect" minimumFontSize="17" id="uC8-gC-PhE">
+                                        <textField key="customView" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://192.168.1.236:8080/demo/ios/msso_web_sample.jsp" borderStyle="roundedRect" minimumFontSize="17" id="uC8-gC-PhE">
                                             <rect key="frame" x="20" y="5" width="374" height="34"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -207,7 +226,7 @@
                                         </textField>
                                     </barButtonItem>
                                     <barButtonItem style="plain" id="qh9-l8-owg">
-                                        <button key="customView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BGY-01-uFN">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="BGY-01-uFN">
                                             <rect key="frame" x="394" y="5" width="0.0" height="34"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <state key="normal" title="GO">
@@ -239,7 +258,12 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="WebView" image="safari" catalog="system" id="HsW-d1-zJ5"/>
                     <navigationItem key="navigationItem" id="fGq-3z-B3f"/>
+                    <connections>
+                        <outlet property="ssoWebView" destination="1Zn-dt-69l" id="1EW-M0-hDz"/>
+                        <outlet property="urlText" destination="uC8-gC-PhE" id="O6H-8f-kJm"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9cg-a0-08d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2486.9565217391305" y="845.75892857142856"/>
         </scene>
