@@ -15,6 +15,7 @@
 ## 빌드 환경
 
 - Xcode Version 11.4 (11E146) 기준
+- iOS 9 또는 이후 버전
 - Objective C
 
 ## 모바일 SSO API
