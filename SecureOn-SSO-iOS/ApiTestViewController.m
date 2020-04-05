@@ -174,8 +174,8 @@ NSString *logTag = @"SsoApiTestViewController -";
         return;
     }
     
-    retStr = ipo_sso_put_value(tagName, tagValue, ipo_get_ssotoken(commonUtil.ssoTokenKey));
-    NSLog(@"%@ putValueAction retStr : %@", logTag, retStr);
+    retStr = ipo_sso_put_value(tagName, tagValue, commonUtil.ssoToken);
+    NSLog(@"%@ putValueAction retStr : %@, %@", logTag, retStr, commonUtil.ssoToken);
     self.retTextView.text = retStr;
 }
 -(void)getValueAction {
@@ -204,9 +204,9 @@ NSString *logTag = @"SsoApiTestViewController -";
     }
     
     if ([commonUtil.secIdFlag isEqualToString:@"TRUE"]) {
-        retStr = ipo_sso_get_value(tagName, [index intValue], ipo_get_ssotoken(commonUtil.ssoTokenKey), [CommonUtil clientIp], getSecId());
+        retStr = ipo_sso_get_value(tagName, [index intValue], ipo_get_ssotoken(commonUtil.ssoTokenKey.mutableCopy), [CommonUtil clientIp], getSecId());
     } else {
-        retStr = ipo_sso_get_value(tagName, [index intValue], ipo_get_ssotoken(commonUtil.ssoTokenKey), [CommonUtil clientIp], nil);
+        retStr = ipo_sso_get_value(tagName, [index intValue], ipo_get_ssotoken(commonUtil.ssoTokenKey.mutableCopy), [CommonUtil clientIp], nil);
     }
     NSLog(@"%@ getValueAction retStr : %@", logTag, retStr);
     self.retTextView.text = retStr;
@@ -216,9 +216,9 @@ NSString *logTag = @"SsoApiTestViewController -";
     NSString *retStr;
     
     if ([commonUtil.secIdFlag isEqualToString:@"TRUE"]) {
-        retStr = ipo_sso_get_all_values(ipo_get_ssotoken(commonUtil.ssoTokenKey), [CommonUtil clientIp], getSecId());
+        retStr = ipo_sso_get_all_values(ipo_get_ssotoken(commonUtil.ssoTokenKey.mutableCopy), [CommonUtil clientIp], getSecId());
     } else {
-        retStr = ipo_sso_get_all_values(ipo_get_ssotoken(commonUtil.ssoTokenKey), [CommonUtil clientIp], nil);
+        retStr = ipo_sso_get_all_values(ipo_get_ssotoken(commonUtil.ssoTokenKey.mutableCopy), [CommonUtil clientIp], nil);
     }
     
     NSLog(@"%@ getAllValuesAction retStr : %@", logTag, retStr);

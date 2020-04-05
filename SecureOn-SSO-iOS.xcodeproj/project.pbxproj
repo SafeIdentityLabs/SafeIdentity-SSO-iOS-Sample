@@ -16,7 +16,6 @@
 		987E037F243A4E5100FE2963 /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987E037E243A4E5100FE2963 /* InfoViewController.m */; };
 		987E0382243A4E6D00FE2963 /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987E0381243A4E6D00FE2963 /* WebViewController.m */; };
 		987E0385243A4E7C00FE2963 /* ApiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987E0384243A4E7C00FE2963 /* ApiViewController.m */; };
-		987E0388243A6AF500FE2963 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987E0387243A6AF500FE2963 /* TableViewController.m */; };
 		987E038B243A6BC900FE2963 /* ApiTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 987E038A243A6BC900FE2963 /* ApiTestViewController.m */; };
 		98B00F51238E8EDC005F2401 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B00F50238E8EDC005F2401 /* AppDelegate.m */; };
 		98B00F54238E8EDC005F2401 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B00F53238E8EDC005F2401 /* SceneDelegate.m */; };
@@ -60,8 +59,6 @@
 		987E0381243A4E6D00FE2963 /* WebViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		987E0383243A4E7C00FE2963 /* ApiViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiViewController.h; sourceTree = "<group>"; };
 		987E0384243A4E7C00FE2963 /* ApiViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiViewController.m; sourceTree = "<group>"; };
-		987E0386243A6AF500FE2963 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
-		987E0387243A6AF500FE2963 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
 		987E0389243A6BC900FE2963 /* ApiTestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiTestViewController.h; sourceTree = "<group>"; };
 		987E038A243A6BC900FE2963 /* ApiTestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiTestViewController.m; sourceTree = "<group>"; };
 		98B00F4C238E8EDC005F2401 /* SafeIdentity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SafeIdentity.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,8 +174,6 @@
 				98B00F60238E8EDD005F2401 /* Info.plist */,
 				987BECBD2435F87800E2FB0F /* sso_config.plist */,
 				98B00F61238E8EDD005F2401 /* main.m */,
-				987E0386243A6AF500FE2963 /* TableViewController.h */,
-				987E0387243A6AF500FE2963 /* TableViewController.m */,
 			);
 			path = "SecureOn-SSO-iOS";
 			sourceTree = "<group>";
@@ -307,7 +302,6 @@
 				98B00F62238E8EDD005F2401 /* main.m in Sources */,
 				987E038B243A6BC900FE2963 /* ApiTestViewController.m in Sources */,
 				987E0382243A4E6D00FE2963 /* WebViewController.m in Sources */,
-				987E0388243A6AF500FE2963 /* TableViewController.m in Sources */,
 				98B00F54238E8EDC005F2401 /* SceneDelegate.m in Sources */,
 				987E0385243A4E7C00FE2963 /* ApiViewController.m in Sources */,
 				987BECAE2435DA8C00E2FB0F /* CommonUtil.m in Sources */,

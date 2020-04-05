@@ -10,6 +10,7 @@
 #import "InfoViewController.h"
 #import "WebViewController.h"
 #import "ApiViewController.h"
+#import "ApiTestViewController.h"
 #import "iposso.h"
 #import "CommonUtil.h"
 
@@ -66,7 +67,7 @@ static CommonUtil *commonUtil;
         NSLog(@"LoginViewController - MSSO Sample SSO init success..");
         
         //ssoToken 가져오기
-        [commonUtil setSsoToken:ipo_get_ssotoken(commonUtil.ssoTokenKey)];
+        [commonUtil setSsoToken:ipo_get_ssotoken(commonUtil.ssoTokenKey.mutableCopy)];
         
         //토큰이 있는지 확인 및 있는 경우 검증 후 로그인 처리
         if (commonUtil.ssoToken != nil || commonUtil.ssoToken != NULL) {
@@ -102,6 +103,7 @@ static CommonUtil *commonUtil;
 
                 [InfoViewController setCommonUtil:(CommonUtil *) commonUtil];
                 [ApiViewController setCommonUtil:(CommonUtil *) commonUtil];
+                [ApiTestViewController setCommonUtil:(CommonUtil *) commonUtil];
                 [WebViewController setCommonUtil:(CommonUtil *) commonUtil];
                 
                 [self performSelector:@selector(loadNextViewController) withObject:nil afterDelay:0];
@@ -250,10 +252,11 @@ static CommonUtil *commonUtil;
         } else {
            // 로그인 성공
            commonUtil.ssoToken = commonUtil.loginResult;
-           ipo_set_ssotoken(commonUtil.ssoToken, commonUtil.ssoTokenKey);
+           ipo_set_ssotoken(commonUtil.ssoToken, commonUtil.ssoTokenKey.mutableCopy);
            
            [InfoViewController setCommonUtil:(CommonUtil *) commonUtil];
            [ApiViewController setCommonUtil:(CommonUtil *) commonUtil];
+           [ApiTestViewController setCommonUtil:(CommonUtil *) commonUtil];
            [WebViewController setCommonUtil:(CommonUtil *) commonUtil];
         }
 
