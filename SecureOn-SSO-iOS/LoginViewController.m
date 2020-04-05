@@ -193,42 +193,45 @@ static CommonUtil *commonUtil;
 
         commonUtil.userId = [NSString stringWithFormat:@"%@", self.useridTextField.text];
                
-        if (selectSsoVersion == -1) {
-           UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[CommonUtil alertTitle] message:@"SSO Version을 선택하세요." preferredStyle:UIAlertControllerStyleAlert];
-           UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"확인" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {}];
-           [alertController addAction:defaultAction];
-           [self presentViewController:alertController animated:YES completion:nil];
-           return;
-        } else if (selectSsoVersion == 0) {
-           if ([commonUtil.secIdFlag isEqualToString:@"TRUE"]) {
-               commonUtil.loginResult = ipo_sso_make_simple_token(@"3", commonUtil.userId,  CommonUtil.clientIp, getSecId());
-           } else {
-               commonUtil.loginResult = ipo_sso_make_simple_token(@"3", commonUtil.userId,  CommonUtil.clientIp, nil);
-           }
-        } else if (selectSsoVersion == 1) {
-           if ([commonUtil.secIdFlag isEqualToString:@"TRUE"]) {
-               commonUtil.loginResult = ipo_sso_reg_user_session(commonUtil.userId, CommonUtil.clientIp, @"TRUE", getSecId());
-           } else {
-               commonUtil.loginResult = ipo_sso_reg_user_session(commonUtil.userId, CommonUtil.clientIp, @"TRUE", nil);
-           }
-        } else if (selectSsoVersion == 2) {
-           //PWD가 없는 경우
-           if (self.passwordTextField.text.length == 0) {
-               [self.passwordTextField becomeFirstResponder];
-               UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[CommonUtil alertTitle] message:@"사용자 패스워드를 입력하세요." preferredStyle:UIAlertControllerStyleAlert];
-               UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"확인" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {}];
-               [alertController addAction:defaultAction];
-               [self presentViewController:alertController animated:YES completion:nil];
-               return;
-           }
-           
-           commonUtil.userPwd = [NSString stringWithFormat:@"%@", self.passwordTextField.text];
-           
-           if ([commonUtil.secIdFlag isEqualToString:@"TRUE"]) {
-               commonUtil.loginResult = ipo_sso_auth_id(commonUtil.userId, commonUtil.userPwd, @"TRUE", CommonUtil.clientIp, getSecId());
-           } else {
-               commonUtil.loginResult = ipo_sso_auth_id(commonUtil.userId, commonUtil.userPwd, @"TRUE", CommonUtil.clientIp, nil);
-           }
+        switch (selectSsoVersion) {
+            case 0: // Express
+                if ([commonUtil.secIdFlag isEqualToString:@"TRUE"]) {
+                    commonUtil.loginResult = ipo_sso_make_simple_token(@"3", commonUtil.userId,  CommonUtil.clientIp, getSecId());
+                } else {
+                    commonUtil.loginResult = ipo_sso_make_simple_token(@"3", commonUtil.userId,  CommonUtil.clientIp, nil);
+                }
+                break;
+            case 1: // Standard
+                if ([commonUtil.secIdFlag isEqualToString:@"TRUE"]) {
+                    commonUtil.loginResult = ipo_sso_reg_user_session(commonUtil.userId, CommonUtil.clientIp, @"TRUE", getSecId());
+                } else {
+                    commonUtil.loginResult = ipo_sso_reg_user_session(commonUtil.userId, CommonUtil.clientIp, @"TRUE", nil);
+                }
+                break;
+            case 2: // Enterprise
+                
+                [self.passwordTextField resignFirstResponder];
+                
+                //PWD가 없는 경우
+                if (self.passwordTextField.text.length == 0) {
+                    [self.passwordTextField becomeFirstResponder];
+                    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:[CommonUtil alertTitle] message:@"사용자 패스워드를 입력하세요." preferredStyle:UIAlertControllerStyleAlert];
+                    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"확인" style:UIAlertActionStyleDefault handler:^(UIAlertAction * action) {}];
+                    [alertController addAction:defaultAction];
+                    [self presentViewController:alertController animated:YES completion:nil];
+                    return;
+                }
+                
+                commonUtil.userPwd = [NSString stringWithFormat:@"%@", self.passwordTextField.text];
+                
+                if ([commonUtil.secIdFlag isEqualToString:@"TRUE"]) {
+                    commonUtil.loginResult = ipo_sso_auth_id(commonUtil.userId, commonUtil.userPwd, @"TRUE", CommonUtil.clientIp, getSecId());
+                } else {
+                    commonUtil.loginResult = ipo_sso_auth_id(commonUtil.userId, commonUtil.userPwd, @"TRUE", CommonUtil.clientIp, nil);
+                }
+                break;
+            default:
+                break;
         }
 
         commonUtil.loginResult = ipo_sso_make_simple_token(@"PutKey-PutValuesdata1234*", commonUtil.loginResult, CommonUtil.clientIp, getSecId());
