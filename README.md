@@ -99,5 +99,5 @@ ipo_sso_verify_token(토큰값, [CommonUtil clientIp], secId);
 ### 로그아웃
 
 ```objectivec
-ipo_sso_logout(commonUtil.ssoTokenKey);``
+ipo_sso_logout(commonUtil.ssoTokenKey);
 ```
