@@ -26,6 +26,20 @@
 
 ```objectivec
 #import "iposso.h"
+#import "CommonUtil.h"
+```
+
+### 모바일 SSO API 초기화
+
+```objectivec
+static CommonUtil *commonUtil;
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    commonUtil = [[CommonUtil alloc] init];
+    [commonUtil setSsoTokenKey:ipo_sso_init([CommonUtil expPageUrl])];
+}
 ```
 
 ### Security ID 생성
@@ -66,8 +80,16 @@ ipo_sso_reg_user_session(로그인아이디, CommonUtil.clientIp, @"TRUE", secId
 ipo_sso_make_simple_token(@"3", 아이디, CommonUtil.clientIp, secId);
 ```
 
+### 토큰 검증
+
+저장된 토큰값이 유효한지 확인 하고 로그인 처리 하면 된다.
+
+```objectivec
+ipo_sso_verify_token(토큰값, [CommonUtil clientIp], secId);
+```
+
 ### 로그아웃
 
 ```objectivec
-ipo_sso_logout(commonUtil.ssoTokenKey);
+ipo_sso_logout(commonUtil.ssoTokenKey);``
 ```
