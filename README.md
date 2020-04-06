@@ -57,7 +57,7 @@ NSString *secId = getSecId();
 덮어쓰기 유무는 "true"로 한다.
 
 ```objectivec
-ipo_sso_auth_id(로그인아이디, 비밀번호, @"TRUE", CommonUtil.clientIp, secId);
+NSString *loginResult = ipo_sso_auth_id(로그인아이디, 비밀번호, @"TRUE", CommonUtil.clientIp, secId);
 ```
 
 ### 스탠다드 로그인
@@ -67,7 +67,7 @@ ipo_sso_auth_id(로그인아이디, 비밀번호, @"TRUE", CommonUtil.clientIp, 
 덮어쓰기 유무는 "true"로 한다.
 
 ```objectivec
-ipo_sso_reg_user_session(로그인아이디, CommonUtil.clientIp, @"TRUE", secId);
+NSString *loginResult = ipo_sso_reg_user_session(로그인아이디, CommonUtil.clientIp, @"TRUE", secId);
 ```
 
 ### 익스프레스 로그인
@@ -77,7 +77,15 @@ ipo_sso_reg_user_session(로그인아이디, CommonUtil.clientIp, @"TRUE", secId
 덮어쓰기 유무는 "true"로 한다.
 
 ```objectivec
-ipo_sso_make_simple_token(@"3", 아이디, CommonUtil.clientIp, secId);
+NSString *loginResult = ipo_sso_make_simple_token(@"3", 아이디, CommonUtil.clientIp, secId);
+```
+
+### 토큰 생성
+
+엔터프라이즈, 스탠다드, 익스프레스 등 로그인 후 결과값을 갖고 토큰을 생성 할수 있다.
+
+```objectivec
+NSString *token = ipo_sso_make_simple_token(@"PutKey-PutValuesdata1234*", loginResult, CommonUtil.clientIp, secId);
 ```
 
 ### 토큰 검증
