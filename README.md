@@ -108,6 +108,18 @@ ipo_sso_logout(commonUtil.ssoTokenKey);
 
 
 
+WebViewTest.html
+
+```javascript
+function callNative() {
+    try {
+        webkit.messageHandlers.callbackHandler.postMessage("{token: 'Your Token', secId: '1234'}");
+    } catch(err) {
+        alert(err);
+    }
+}
+```
+
 WebViewTestViewController.m
 
 ```objectivec
@@ -142,24 +154,22 @@ WebViewTestViewController.m
 
 ```objectivec
 - (IBAction) setTokenButtonPressed:(id)sender {
-
     [self.wkWebView evaluateJavaScript:[NSString stringWithFormat:@"setToken('%@', '%@')", token, getSecId()] completionHandler:^(NSString *result, NSError *error) {
         NSLog(@" evaluateJavaScript result : %@", result);
         NSLog(@" evaluateJavaScript error  : %@", error);
     }];
 }
+
 WebViewTest.html
 ```
 
+WebViewTest.html
+
 ```javascript
-function setToken(token, secId) {
+function setToken(token, secId) 
     document.querySelector('p').innerHTML = "token: " + token + ', secId: ' + secId;
 }
 ```
-
-
-
-
 
 
 

@@ -5,13 +5,13 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <script type="text/javascript" charset="UTF-8">
 
-    function callNative() {
-        try {
-            webkit.messageHandlers.callbackHandler.postMessage("{token: 'Your Token', secId: '1234'}");
-        } catch(err) {
-            alert(err);
-        }
+function callNative() {
+    try {
+        webkit.messageHandlers.callbackHandler.postMessage("{token: 'Your Token', secId: '1234'}");
+    } catch(err) {
+        alert(err);
     }
+}
 
     function setToken(token, secId) {
         document.querySelector('p').innerHTML = "token: " + token + ', secId: ' + secId;
