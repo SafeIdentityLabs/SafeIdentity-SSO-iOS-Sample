@@ -35,9 +35,9 @@ static CommonUtil *commonUtil;
     [commonUtil setSecIdFlag:[configDic objectForKey:@"SEC_ID_FLAG"]];
     NSLog(@"LoginViewController - SEC_ID_FLAG : %@", commonUtil.secIdFlag);
         
-    NSString *secId;
+    NSString *secId = getSecId();
+    NSLog(@"secId %@", secId);
     if ([commonUtil.secIdFlag isEqualToString:@"TRUE"]) {
-        secId = getSecId();
         self.secIdTextView.editable = NO;
         self.secIdTextView.text = secId;
     }
@@ -140,6 +140,9 @@ static CommonUtil *commonUtil;
 
     // 로그인 버튼
     _loginButton.layer.cornerRadius = 24.0f;
+    
+    // 웹뷰 테스트 버튼
+    _webviewTestButton.layer.cornerRadius = 24.0f;
 }
 
 //rHttpLastError, rSSOLastError 변수에 값 세팅

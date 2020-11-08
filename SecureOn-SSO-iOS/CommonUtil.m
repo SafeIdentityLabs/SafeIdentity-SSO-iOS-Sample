@@ -9,8 +9,8 @@
 #define CLIENT_IP @"127.0.0.1"
 //#define EXP_PAGE_URL @"https://192.168.60.136:8443/demo/ios/exp_mobilesso.jsp"
 //#define SAMPLE_PAGE_URL @"https://192.168.60.136:8443/demo/ios/msso_web_sample.jsp"
-#define EXP_PAGE_URL @"http://192.168.1.236:8080/demo/ios/exp_mobilesso.jsp"
-#define SAMPLE_PAGE_URL @"http://192.168.1.236:8080/demo/ios/msso_web_sample.jsp"
+#define EXP_PAGE_URL @"http://127.0.0.1:8080/demo/ios/exp_mobilesso.jsp"
+#define SAMPLE_PAGE_URL @"http://127.0.0.1:8080/demo/ios/msso_web_sample.jsp"
 #define ALERT_TITLE @"SafeIdentity Mobile Alert"
 #define CONFIRM_TITLE @"SafeIdentity Mobile Confirm"
 
