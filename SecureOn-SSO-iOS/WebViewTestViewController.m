@@ -25,13 +25,14 @@ NSString *token = @"djaskldjsa890du30ejd2jd890jcsdosdfu89ewjd";
     frame.size.height = frame.size.height - 80;
     frame.origin.y = frame.origin.y + 80;
     
-    WKWebViewConfiguration  *config = [[WKWebViewConfiguration alloc]init];
-    WKUserContentController *jsctrl = [[WKUserContentController alloc]init];
+    WKWebViewConfiguration  *webViewConfiguration = [[WKWebViewConfiguration alloc]init];
+    WKUserContentController *userContentController = [[WKUserContentController alloc]init];
     
-    [jsctrl addScriptMessageHandler:self name:@"callbackHandler"];
-    [config setUserContentController:jsctrl];
+    // 웹뷰에서 네이티브에 callbackHandler 메시지를 호출
+    [userContentController addScriptMessageHandler:self name:@"callbackHandler"];
+    [webViewConfiguration setUserContentController:userContentController];
 
-    self.wkWebView = [[WKWebView alloc] initWithFrame:frame configuration:config];
+    self.wkWebView = [[WKWebView alloc] initWithFrame:frame configuration:webViewConfiguration];
     [self.wkWebView setNavigationDelegate:self];
     [self.wkWebView setUIDelegate:self];
     [self.view addSubview:self.wkWebView];
@@ -42,6 +43,7 @@ NSString *token = @"djaskldjsa890du30ejd2jd890jcsdosdfu89ewjd";
 
 - (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
 
+    // 자바스크립트를 통해 던진 메시지를 구분해 처리 한다.
     if ([message.name isEqualToString:@"callbackHandler"]) {
         NSLog(@"Javascript is sending a message %@", message.body);
         [self.setTokenButton setTitle:message.body forState: UIControlStateNormal];

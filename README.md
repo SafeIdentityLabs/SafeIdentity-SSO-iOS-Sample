@@ -36,7 +36,7 @@ static CommonUtil *commonUtil;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+
     commonUtil = [[CommonUtil alloc] init];
     [commonUtil setSsoTokenKey:ipo_sso_init([CommonUtil expPageUrl])];
 }
@@ -101,3 +101,65 @@ ipo_sso_verify_token(토큰값, [CommonUtil clientIp], secId);
 ```objectivec
 ipo_sso_logout(commonUtil.ssoTokenKey);
 ```
+
+### 웹뷰 -> 네이티브
+
+웹뷰에서 네이티브로 토큰을 넘기는 방법론만 제공 되며 모바일 SSO API를 사용해 응용해서 개발하면 된다. WebViewTestViewController와 WebViewTest.html가 샘플이다.
+
+
+
+WebViewTestViewController.m
+
+```objectivec
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    WKWebViewConfiguration  *webViewConfiguration = [[WKWebViewConfiguration alloc]init];
+    WKUserContentController *userContentController = [[WKUserContentController alloc]init];
+    
+    // 웹뷰에서 네이티브에 callbackHandler 메시지를 호출
+    [userContentController addScriptMessageHandler:self name:@"callbackHandler"];
+    [webViewConfiguration setUserContentController:userContentController];
+...
+}
+
+- (void)userContentController:(WKUserContentController *)userContentController didReceiveScriptMessage:(WKScriptMessage *)message {
+    // 자바스크립트를 통해 던진 메시지를 구분해 처리 한다.
+    if ([message.name isEqualToString:@"callbackHandler"]) {
+        NSLog(@"Javascript is sending a message %@", message.body);
+        [self.setTokenButton setTitle:message.body forState: UIControlStateNormal];
+    }
+}
+```
+
+### 네이티브 -> 웹뷰
+
+네이티브에서 웹뷰로 토큰을 넘기는 방법론만 제공 되며 모바일 SSO API를 사용해 응용해서 개발하면 된다. WebViewTestViewController와 WebViewTest.html가 샘플이다.
+
+
+
+WebViewTestViewController.m
+
+```objectivec
+- (IBAction) setTokenButtonPressed:(id)sender {
+    
+    [self.wkWebView evaluateJavaScript:[NSString stringWithFormat:@"setToken('%@', '%@')", token, getSecId()] completionHandler:^(NSString *result, NSError *error) {
+        NSLog(@" evaluateJavaScript result : %@", result);
+        NSLog(@" evaluateJavaScript error  : %@", error);
+    }];
+}
+WebViewTest.html
+```
+
+```javascript
+function setToken(token, secId) {
+    document.querySelector('p').innerHTML = "token: " + token + ', secId: ' + secId;
+}
+```
+
+
+
+
+
+
+
+
