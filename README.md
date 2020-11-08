@@ -106,8 +106,6 @@ ipo_sso_logout(commonUtil.ssoTokenKey);
 
 웹뷰에서 네이티브로 토큰을 넘기는 방법론만 제공 되며 모바일 SSO API를 사용해 응용해서 개발하면 된다. WebViewTestViewController와 WebViewTest.html가 샘플이다.
 
-
-
 WebViewTest.html
 
 ```javascript
@@ -128,7 +126,7 @@ WebViewTestViewController.m
 ...
     WKWebViewConfiguration  *webViewConfiguration = [[WKWebViewConfiguration alloc]init];
     WKUserContentController *userContentController = [[WKUserContentController alloc]init];
-    
+
     // 웹뷰에서 네이티브에 callbackHandler 메시지를 호출
     [userContentController addScriptMessageHandler:self name:@"callbackHandler"];
     [webViewConfiguration setUserContentController:userContentController];
@@ -148,8 +146,6 @@ WebViewTestViewController.m
 
 네이티브에서 웹뷰로 토큰을 넘기는 방법론만 제공 되며 모바일 SSO API를 사용해 응용해서 개발하면 된다. WebViewTestViewController와 WebViewTest.html가 샘플이다.
 
-
-
 WebViewTestViewController.m
 
 ```objectivec
@@ -159,8 +155,6 @@ WebViewTestViewController.m
         NSLog(@" evaluateJavaScript error  : %@", error);
     }];
 }
-
-WebViewTest.html
 ```
 
 WebViewTest.html
@@ -170,7 +164,3 @@ function setToken(token, secId)
     document.querySelector('p').innerHTML = "token: " + token + ', secId: ' + secId;
 }
 ```
-
-
-
-
