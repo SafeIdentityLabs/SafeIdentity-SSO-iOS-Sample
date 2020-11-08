@@ -113,6 +113,7 @@ WebViewTestViewController.m
 ```objectivec
 - (void)viewDidLoad {
     [super viewDidLoad];
+...
     WKWebViewConfiguration  *webViewConfiguration = [[WKWebViewConfiguration alloc]init];
     WKUserContentController *userContentController = [[WKUserContentController alloc]init];
     
@@ -141,7 +142,7 @@ WebViewTestViewController.m
 
 ```objectivec
 - (IBAction) setTokenButtonPressed:(id)sender {
-    
+
     [self.wkWebView evaluateJavaScript:[NSString stringWithFormat:@"setToken('%@', '%@')", token, getSecId()] completionHandler:^(NSString *result, NSError *error) {
         NSLog(@" evaluateJavaScript result : %@", result);
         NSLog(@" evaluateJavaScript error  : %@", error);
